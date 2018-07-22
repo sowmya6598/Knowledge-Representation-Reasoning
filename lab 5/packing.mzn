@@ -1,7 +1,10 @@
+% Parameters
+%%%%%%%%%%%
 int: n = 4;                      % How many squares do we have?
 set of int: SQUARES = 1..n;  % Set of the available squares
 
-
+% Variables
+%%%%%%%%%%%
 int: maxSize = sum([i | i in SQUARES]);
 int: minArea = sum([i*i | i in SQUARES]);
 var n..maxSize: height;    % height of the container
@@ -10,6 +13,9 @@ var minArea..n*maxSize: area = height * width; % container's area
 array[SQUARES] of var 0..maxSize-1: x; % squares' coordinates in the container
 array[SQUARES] of var 0..maxSize-1: y; % squares' coordinated in the container
   
+
+% Constraints 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 
 % Constraint 1: Squares should fit inside the container
 
@@ -35,7 +41,12 @@ set_search([int_search(...),int_search()]
 
 )
 
+% Goal
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 solve minimize area; 
   
+  
+% Boring output  %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 output [ show(i) ++ " > (" ++ show(x[i]) ++ "," ++ show(y[i]) ++ ")\n" | i in 1..n] ++
   ["area = " ++ show(width) ++ " * " ++ show(height) ++ " = " ++ show(area)]
