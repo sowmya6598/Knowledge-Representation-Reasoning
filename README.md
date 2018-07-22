@@ -5,7 +5,7 @@
 - Lab 2 - N Queens + Graph Coloring
 - Lab 3 - Sudoku + Magic Sequence
 - Lab 4 - Symmetry Breaking + Reified Constraints
-- Lab 5 - Search Modelling
+- Lab 5 - Search Modeling
 - Lab 6 - Automated Planning: 101
 - Lab 7 - Strips + PDDL
 - Lab 8 - Automated Planning: Fluents
