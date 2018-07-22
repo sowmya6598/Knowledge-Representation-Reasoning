@@ -3,7 +3,7 @@
 
 - Lab 1 - Constraint Programming
 - Lab 2 - N Queens + Graph Coloring
-- Lab 3 - Sudoku + Magic Numbers
+- Lab 3 - Sudoku + Magic Sequence
 - Lab 4 - Redundant Constraints
 - Lab 5 - Solver Configuration
 - Lab 6 - Automated Planning: 101
